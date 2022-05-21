@@ -1,0 +1,69 @@
+.mainVis {
+    position: relative; display: flex; align-items: center; justify-content: center; background-position: center !important; background-size: cover !important; height: 60rem; text-align: center;
+    &::after {
+        content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(116,55,15,0.5);
+    }
+
+    &__inner {
+        position: relative; z-index: 2; background: rgba(0,0,0,0.5); width: 100%; padding: 2rem;
+    }
+    &__name {
+        display: block; font-size: 3.5rem; color: #fff; font-weight: 800; 
+        font-family: 'Roboto', sans-serif;
+    }
+    &__tit {
+        display: block; font-size: 4.5rem; color: #fff; font-weight: 800; 
+        font-family: 'Roboto', sans-serif;
+        margin: 1rem 0 0;
+    }
+    &__txt {
+        display: block; font-size: 2rem; color: rgba(255,255,255,0.7); font-weight: 400; 
+        margin: 2rem 0 0; line-height: 1.8;
+    }
+    
+    button {
+        position: absolute; left: 50%; transform: translate(-50%,0); bottom: 2rem; width: 10rem; height: 4.5rem; font-size: 1.6rem; font-weight: 500; background: rgba(242, 202, 4, 1); color: #222; z-index: 2; transition: .3s ease;
+
+        &:hover {
+            border-radius: 3rem;
+        }
+    }
+}
+
+.mainSec {
+    padding: 5rem 0;
+    .mainTit {font-family: 'poppins', sans-serif; font-size: 4rem; text-align: center; color: #222; padding: 0 0 2rem;}
+}
+
+.about {
+    &__list {
+        display: flex; flex-wrap: wrap; justify-content: center; gap: 4rem;
+        li {
+            width: calc((100% - 10rem) / 3); text-align: center; 
+            .about__txt {
+                margin: 1rem 0 0;
+                strong {display: block; font-size: 2rem; font-family: 'poppins', sans-serif; }
+                p {
+                    font-size: 1.8rem; font-weight: 500; color: #666;
+                    a {transition: .3s ease;}
+                    a:hover {color: rgba(242, 159, 4, 1);}
+                }
+            }
+        }
+    }
+}
+
+.skills {
+    background: rgba(242, 159, 4, 1);
+    
+    .skills__list {
+        li {
+            display: flex; background: #fff; flex-direction: column;
+            align-items: center;
+            max-width: 55rem; margin: 0 auto; border-radius: 2rem; box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.2);
+            img {
+                margin: 1.5rem 0;
+            }
+        }
+    }
+}
