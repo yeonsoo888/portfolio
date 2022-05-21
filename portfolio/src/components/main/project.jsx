@@ -4,6 +4,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore ,{Autoplay , Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+import hyeon1 from '../../images/project/hyeon1.JPG'
+import hyeon2 from '../../images/project/hyeon2.JPG'
+import hyeon3 from '../../images/project/hyeon3.JPG'
+import hyeon4 from '../../images/project/hyeon4.JPG'
+import seungwon1 from '../../images/project/seungwon1.JPG'
+import seungwon2 from '../../images/project/seungwon2.JPG'
+import seungwon3 from '../../images/project/seungwon3.JPG'
+import seungwon4 from '../../images/project/seungwon4.JPG'
+import jaehyeon1 from '../../images/project/jaehyeon1.JPG'
+import jaehyeon2 from '../../images/project/jaehyeon2.JPG'
+import jaehyeon3 from '../../images/project/jaehyeon3.JPG'
+import jaehyeon5 from '../../images/project/jaehyeon5.JPG'
+import jaehyeon6 from '../../images/project/jaehyeon6.JPG'
+import jaehyeon7 from '../../images/project/jaehyeon7.JPG'
+
 SwiperCore.use([Autoplay,Pagination ])
 
 function Project() {
@@ -26,10 +42,10 @@ function Project() {
                                     pagination={{ clickable: true }}
                                     autoplay={{delay: 3000}}
                                 >
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon1.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon2.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon3.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon4.jpg`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={hyeon1} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={hyeon2} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={hyeon3} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={hyeon4} alt="" /></SwiperSlide>
                                     
                                 </Swiper>
                             </div>
@@ -66,11 +82,10 @@ function Project() {
                                     pagination={{ clickable: true }}
                                     autoplay={{delay: 3000}}
                                 >
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon1.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon2.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon3.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/hyeon4.jpg`} alt="" /></SwiperSlide>
-                                    
+                                    <SwiperSlide><img src={hyeon1} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={hyeon2} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={hyeon3} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={hyeon4} alt="" /></SwiperSlide>
                                 </Swiper>
                             </div>
                             <div className="project__txtWrap">
@@ -103,10 +118,10 @@ function Project() {
                                     pagination={{ clickable: true }}
                                     autoplay={{delay: 3000}}
                                 >
-                                    <SwiperSlide><img src={`${patch}/images/project/seungwon1.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/seungwon2.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/seungwon3.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/seungwon4.jpg`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={seungwon1} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={seungwon2} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={seungwon3} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={seungwon4} alt="" /></SwiperSlide>
                                     
                                 </Swiper>
                             </div>
@@ -140,12 +155,12 @@ function Project() {
                                     pagination={{ clickable: true }}
                                     autoplay={{delay: 3000}}
                                 >
-                                    <SwiperSlide><img src={`${patch}/images/project/jaehyeon1.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/jaehyeon2.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/jaehyeon3.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/jaehyeon5.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/jaehyeon6.jpg`} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={`${patch}/images/project/jaehyeon7.jpg`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={jaehyeon1} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={jaehyeon2} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={jaehyeon3} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={jaehyeon5} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={jaehyeon6} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={jaehyeon7} alt="" /></SwiperSlide>
                                 </Swiper>
                             </div>
                             <div className="project__txtWrap">
