@@ -71,7 +71,7 @@
 .projects {
     background: #D9CDBF;
     .project__tit {
-        position: relative; display: block; text-align: center; font-size: 3rem; padding: 0 0 1.5rem; margin: 0 0 1.5rem;
+        position: relative; display: block; text-align: center; font-size: 3rem; padding: 3rem 0 1.5rem; margin: 0 0 1.5rem;
         &::after {content: ""; position: absolute; left: 50%; bottom: 0; width: 2rem; height: 0.3rem; background: #F0F2AE; transform: translate(-50%,0);}
     }
     .projectList {
@@ -104,13 +104,38 @@
                             &:last-child {border-bottom: none;}
 
                             span {font-size: 2rem; width: 8rem; font-weight: 700;}
-                            a,p {font-size: 1.6rem; flex: 1;}
+                            a,p {font-size: 1.6rem; flex: 1; transition: .3s ease;}
+                            a:hover {color: rgb(242, 159, 4);}
                         }
                     }
                 }
             }
 
             
+        }
+    }
+}
+
+.carrer {
+    background: #D9D5A3;
+    .carrer__list {
+        > li {
+            display: flex;
+            > strong {
+                width: 20rem; border-right: 1px solid #222; font-size: 3rem; color: #666; padding: 2rem 0;
+            }
+            .carrer__txtWrap {
+                flex: 1; padding: 2rem 0 2rem 2rem;
+                .carrer__name {font-size: 2.5rem;}
+                .carrer__job {font-size: 2rem; margin: 0 0 1rem;}
+                .carrer__stack {
+                    display: flex; gap: 1rem;
+                    li {
+                        font-size: 1.6rem; padding: 0.5rem; background: #eaeaea; border-radius: 0.5rem;
+                    }
+                }
+                .carrer__txt {font-size: 1.5rem; margin: 1rem 0 0; line-height: 1.5;}
+            }
         }
     }
 }

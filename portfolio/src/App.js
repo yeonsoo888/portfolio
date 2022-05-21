@@ -5,6 +5,7 @@ import About from './components/main/about';
 import Skills from './components/main/skills';
 import { useEffect } from 'react';
 import Project from './components/main/project';
+import Carrer from './components/main/carrer';
 export default function App() {
   const path = process.env.PUBLIC_URL;
 
@@ -15,6 +16,7 @@ export default function App() {
         <About />
         <Skills />
         <Project />
+        <Carrer />
       </>    
   );
 }

@@ -53,7 +53,7 @@ export default function Header() {
                         <li><button onClick={() => {moveTo(0)}}>About me</button></li>
                         <li><button onClick={() => {moveTo(1)}}>Skills</button></li>
                         <li><button onClick={() => {moveTo(2)}}>Projects</button></li>
-                        <li><button onClick={() => {moveTo(3)}}>Career</button></li>
+                        <li><button onClick={() => {moveTo(3)}}>History</button></li>
                     </ul>
                 </nav>
             </div>
