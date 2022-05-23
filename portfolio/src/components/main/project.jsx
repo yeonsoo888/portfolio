@@ -394,10 +394,60 @@ function Project({setScrollTarget}) {
                             </>
                         )
                     }
+                    {
+                        viewAmt >= 3 && (
+                            <>
+                                <li className="half">
+                                    <div>
+                                        <strong className="projectList__tit">미카도스시</strong>
+                                        <div className="projectList__cnts">
+                                            <div className="project__txtWrap">
+                                                <ul className="project__info">
+                                                    <li>
+                                                        <span>URL</span>
+                                                        <a href="http://mikadosushi.co.kr/" target="_blank">http://mikadosushi.co.kr/</a>
+                                                    </li>
+                                                    <li>
+                                                        <span>device</span>
+                                                        <p>반응형 웹사이트</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>작업기간</span>
+                                                        <p>3일</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <strong className="projectList__tit">TNS</strong>
+                                        <div className="projectList__cnts">
+                                            <div className="project__txtWrap">
+                                                <ul className="project__info">
+                                                    <li>
+                                                        <span>URL</span>
+                                                        <a href="https://tbjeong.cafe24.com/" target="_blank">https://tbjeong.cafe24.com/</a>
+                                                    </li>
+                                                    <li>
+                                                        <span>device</span>
+                                                        <p>반응형 웹사이트</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>작업기간</span>
+                                                        <p>4일</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </>
+                        )
+                    }
                 </ul>
                 <div className="btnMore__wrap">
                     {
-                        viewAmt == 2 
+                        viewAmt == 3
                         ? <button type="button" onClick={handleFlod}>접기</button>
                         : <button type="button" onClick={handleViewMore}>더보기</button>
                     }
