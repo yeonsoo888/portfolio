@@ -19,6 +19,9 @@ import jaehyeon3 from '../../images/project/jaehyeon3.JPG'
 import jaehyeon5 from '../../images/project/jaehyeon5.JPG'
 import jaehyeon6 from '../../images/project/jaehyeon6.JPG'
 import jaehyeon7 from '../../images/project/jaehyeon7.JPG'
+import todo1 from '../../images/project/todo1.JPG'
+import todo2 from '../../images/project/todo2.JPG'
+import todo3 from '../../images/project/todo3.JPG'
 
 SwiperCore.use([Autoplay,Pagination ])
 
@@ -67,27 +70,62 @@ function Project({setScrollTarget}) {
                                     pagination={{ clickable: true }}
                                     autoplay={{delay: 3000}}
                                 >
-                                    <SwiperSlide><img src={hyeon1} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={hyeon2} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={hyeon3} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={hyeon4} alt="" /></SwiperSlide>
-                                    
+                                    <SwiperSlide><img src={todo1} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={todo2} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={todo3} alt="" /></SwiperSlide>
                                 </Swiper>
                             </div>
                             <div className="project__txtWrap">
                                 <ul className="project__info">
                                     <li>
                                         <span>URL</span>
-                                        <a href="//www.hyundaieverdigm.com/main/" target="_blank">https://www.hyundaieverdigm.com/main/</a>
+                                        <a href="https://todoapp-351107.du.r.appspot.com/" target="_blank">https:https://todoapp-351107.du.r.appspot.com/</a>
                                     </li>
                                     <li>
-                                        <span>device</span>
-                                        <p>반응형 웹사이트</p>
+                                        <span>GitHub</span>
+                                        <a href="https://github.com/yeonsoo888/to-do-app" target="_blank">https://github.com/yeonsoo888/to-do-app</a>
                                     </li>
                                     <li>
-                                        <span>작업기간</span>
-                                        <p>10일</p>
+                                        <span>기능</span>
+                                        <p>
+                                            1. JWT를 이용한 로그인 구현 (cookie) <br/>
+                                            2. mongoDB atlas 호스팅 <br/>
+                                            3. node.js + express 서버 구현 <br/>
+                                            4. typescript 적용 <br/>
+                                            5. CRUD 구현
+                                        </p>
                                     </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong className="projectList__tit">yeontube</strong>
+                        <div className="projectList__cnts">
+                            <div className="project__slideWrap">
+                                
+                            </div>
+                            <div className="project__txtWrap">
+                                <ul className="project__info">
+                                    <li>
+                                        <span>URL</span>
+                                        <a href="https://todoapp-351107.du.r.appspot.com/" target="_blank">https:https://todoapp-351107.du.r.appspot.com/</a>
+                                    </li>
+                                    <li>
+                                        <span>GitHub</span>
+                                        <a href="https://github.com/yeonsoo888/yeontube" target="_blank">https://github.com/yeonsoo888/yeontube</a>
+                                    </li>
+                                    <li>
+                                        <span>기능</span>
+                                        <p>
+                                            youtube API를 이용한 youtube clone coding <br />
+                                            1. 인기동영상 <br />
+                                            2. 검색기능 <br />
+                                            3. 동영상 View
+                                        </p>
+                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
