@@ -15,7 +15,7 @@ export default function Carrer() {
                         <div className="carrer__txtWrap">
                             <b className="carrer__name">주식회사 웹컴퍼니 (prix)</b>
                             <p className="carrer__job">퍼블리셔</p>
-                            <ul class="carrer__stack">
+                            <ul className="carrer__stack">
                                 <li>HTML5</li>
                                 <li>CSS3</li>
                                 <li>jQuery</li>
@@ -37,7 +37,7 @@ export default function Carrer() {
                         <div className="carrer__txtWrap">
                             <b className="carrer__name">디코드컴퓨터학원</b>
                             <p className="carrer__job">리액트 프론트엔드 개발 실무 교육 수료</p>
-                            <ul class="carrer__stack">
+                            <ul className="carrer__stack">
                                 <li>React</li>
                                 <li>Redux</li>
                                 <li>Recoil</li>
@@ -57,7 +57,7 @@ export default function Carrer() {
                         <div className="carrer__txtWrap">
                             <b className="carrer__name">주식회사 아반소프트 (avansoft)</b>
                             <p className="carrer__job">퍼블리셔</p>
-                            <ul class="carrer__stack">
+                            <ul className="carrer__stack">
                                 <li>HTML5</li>
                                 <li>CSS3</li>
                                 <li>jQuery</li>
@@ -77,7 +77,7 @@ export default function Carrer() {
                         <div className="carrer__txtWrap">
                             <b className="carrer__name">희망연구소배움</b>
                             <p className="carrer__job">퍼블리셔</p>
-                            <ul class="carrer__stack">
+                            <ul className="carrer__stack">
                                 <li>WordPress</li>
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -98,7 +98,7 @@ export default function Carrer() {
                         <div className="carrer__txtWrap">
                             <b className="carrer__name">하이미디어컴퓨터학원</b>
                             <p className="carrer__job">웹퍼블리셔 , UI/UX 프론트엔드 양성과정 수료</p>
-                            <ul class="carrer__stack">
+                            <ul className="carrer__stack">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>

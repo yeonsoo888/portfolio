@@ -58,6 +58,7 @@
     background: #8C775E;
     .mainTit {color: #fff;}
     .skills__list {
+        height: 69rem;
         li {
             display: flex; background: #fff; flex-direction: column;
             align-items: center;
@@ -111,8 +112,16 @@
                     }
                 }
             }
-
-            
+        }
+        > li.half {
+            display: flex;
+            > div {width: 50%;}
+        }
+    }
+    .btnMore__wrap {
+        text-align: center; padding: 2rem 0 0;
+        button {
+            background: #8C775E; color: #fff; padding: 1rem 3rem; font-size: 1.8rem; font-weight: 500; border-radius: 1rem;
         }
     }
 }

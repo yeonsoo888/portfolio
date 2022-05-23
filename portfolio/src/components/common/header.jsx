@@ -6,34 +6,7 @@ import {
     Link
 } from "react-router-dom";
 
-export default function Header() {
-    const [scroll,setScroll] = useState("");
-    const [scrollTarget,setScrollTarget] = useState([]);
-    
-    useEffect( () => {
-        window.addEventListener('scroll',(e) => {
-            const st = window.scrollY;
-            if(st >= 1) {
-                setScroll('scrolled');
-            } else {
-                setScroll('');
-            }
-        })
-
-        const mainSec = document.querySelectorAll(".mainSec");
-        window.addEventListener("resize",() => {
-            const arrTarget = [];
-            let headerheight = document.querySelector(".header").offsetHeight;
-            
-            for( let item of mainSec) {
-                arrTarget.push(item.offsetTop - headerheight);
-            }
-            setScrollTarget(arrTarget);
-        })
-        window.dispatchEvent(new Event('resize'));
-        window.dispatchEvent(new Event('scroll'));
-    },[])
-
+export default function Header({setScrollTarget,scrollTarget,scroll}) {
     const moveTo = (idx) => {
         window.scrollTo({
             top: scrollTarget[idx],
