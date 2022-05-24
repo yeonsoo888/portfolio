@@ -1,9 +1,9 @@
 import Layout from "../common/layout";
 import img1 from '../../images/icon1.png'
-import img2 from '../../images/icon1.png'
-import img3 from '../../images/icon1.png'
-import img4 from '../../images/icon1.png'
-import img5 from '../../images/icon1.png'
+import img2 from '../../images/icon2.png'
+import img3 from '../../images/icon3.png'
+import img4 from '../../images/icon4.png'
+import img5 from '../../images/icon5.png'
 
 export default function About() {
     const path = process.env.PUBLIC_URL;
