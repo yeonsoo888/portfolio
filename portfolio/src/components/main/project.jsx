@@ -142,6 +142,36 @@ function Project({setScrollTarget}) {
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <strong className="projectList__tit">BuddyBuddy_v2</strong>
+                        <div className="projectList__cnts">
+                            <div className="project__slideWrap">
+                            </div>
+                            <div className="project__txtWrap">
+                                <ul className="project__info">
+                                    <li>
+                                        <span>URL</span>
+                                        <a href="https://github.com/yeonsoo888/buddybuddy_v2" target="_blank">https://github.com/yeonsoo888/buddybuddy_v2</a>
+                                    </li>
+                                    <li>
+                                        <span>GitHub</span>
+                                        <a href="https://github.com/yeonsoo888/buddybuddy_v2" target="_blank">https://github.com/yeonsoo888/buddybuddy_v2</a>
+                                    </li>
+                                    <li>
+                                        <span>기능</span>
+                                        <p>
+                                            -제작중-
+                                            <br />
+                                            1. socket.io를 이용한 실시간 채팅
+                                            2. 채팅 방 생성
+                                            3. 로그인
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <b className="project__tit">퍼블리싱</b>
                 <ul className="projectList">
