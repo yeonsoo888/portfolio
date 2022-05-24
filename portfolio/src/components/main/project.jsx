@@ -5,23 +5,25 @@ import SwiperCore ,{Autoplay , Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import hyeon1 from '../../images/project/hyeon1.JPG'
-import hyeon2 from '../../images/project/hyeon2.JPG'
-import hyeon3 from '../../images/project/hyeon3.JPG'
-import hyeon4 from '../../images/project/hyeon4.JPG'
-import seungwon1 from '../../images/project/seungwon1.JPG'
-import seungwon2 from '../../images/project/seungwon2.JPG'
-import seungwon3 from '../../images/project/seungwon3.JPG'
-import seungwon4 from '../../images/project/seungwon4.JPG'
-import jaehyeon1 from '../../images/project/jaehyeon1.JPG'
-import jaehyeon2 from '../../images/project/jaehyeon2.JPG'
-import jaehyeon3 from '../../images/project/jaehyeon3.JPG'
-import jaehyeon5 from '../../images/project/jaehyeon5.JPG'
-import jaehyeon6 from '../../images/project/jaehyeon6.JPG'
-import jaehyeon7 from '../../images/project/jaehyeon7.JPG'
-import todo1 from '../../images/project/todo1.JPG'
-import todo2 from '../../images/project/todo2.JPG'
-import todo3 from '../../images/project/todo3.JPG'
+import hyeon1 from '../../images/project/hyeon1.JPG';
+import hyeon2 from '../../images/project/hyeon2.JPG';
+import hyeon3 from '../../images/project/hyeon3.JPG';
+import hyeon4 from '../../images/project/hyeon4.JPG';
+import seungwon1 from '../../images/project/seungwon1.JPG';
+import seungwon2 from '../../images/project/seungwon2.JPG';
+import seungwon3 from '../../images/project/seungwon3.JPG';
+import seungwon4 from '../../images/project/seungwon4.JPG';
+import jaehyeon1 from '../../images/project/jaehyeon1.JPG';
+import jaehyeon2 from '../../images/project/jaehyeon2.JPG';
+import jaehyeon3 from '../../images/project/jaehyeon3.JPG';
+import jaehyeon5 from '../../images/project/jaehyeon5.JPG';
+import jaehyeon6 from '../../images/project/jaehyeon6.JPG';
+import jaehyeon7 from '../../images/project/jaehyeon7.JPG';
+import todo1 from '../../images/project/todo1.JPG';
+import todo2 from '../../images/project/todo2.JPG';
+import todo3 from '../../images/project/todo3.JPG';
+import youtube1 from '../../images/project/youtube1.JPG';
+import youtube2 from '../../images/project/youtube2.JPG';
 
 SwiperCore.use([Autoplay,Pagination ])
 
@@ -103,14 +105,24 @@ function Project({setScrollTarget}) {
                     <li>
                         <strong className="projectList__tit">yeontube</strong>
                         <div className="projectList__cnts">
-                            <div className="project__slideWrap">
-                                
+                        <div className="project__slideWrap">
+                                <Swiper
+                                    spaceBetween={20}
+                                    slidesPerView={1}
+                                    speed={1000}
+                                    loop={true}
+                                    pagination={{ clickable: true }}
+                                    autoplay={{delay: 3000}}
+                                >
+                                    <SwiperSlide><img src={youtube1} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={youtube2} alt="" /></SwiperSlide>
+                                </Swiper>
                             </div>
                             <div className="project__txtWrap">
                                 <ul className="project__info">
                                     <li>
                                         <span>URL</span>
-                                        <a href="https://todoapp-351107.du.r.appspot.com/" target="_blank">https:https://todoapp-351107.du.r.appspot.com/</a>
+                                        <a href="https://yeonsoo888.github.io/yeontube/" target="_blank">https://yeonsoo888.github.io/yeontube/</a>
                                     </li>
                                     <li>
                                         <span>GitHub</span>
