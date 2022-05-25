@@ -24,8 +24,8 @@ export default function Carrer() {
                                 <li>ASP</li>
                             </ul>
                             <p className="carrer__txt">
-                                JSX를 활용한 UI 컴포넌트 제작 및 redux를 활용한 상태관리 교육 수료 <br />
-                                ES6 기반의 프론트엔드 개발을 위한 기초 프로그래밍 능력 증진
+                                웹컴퍼니(프릭스)에서 퍼블리셔로 근무중입니다. <br />
+                                그누보드 기반 웹사이트와 ASP 웹사이트 다수에 투입하여 여러 웹사이트를 제작하였습니다.
                             </p>
                         </div>
                     </li>
@@ -44,8 +44,8 @@ export default function Carrer() {
                                 <li>Node.js</li>
                             </ul>
                             <p className="carrer__txt">
-                                웹컴퍼니(프릭스)에서 퍼블리셔로 근무중입니다. <br />
-                                그누보드 기반 웹사이트와 ASP 웹사이트 다수에 투입하여 여러 웹사이트를 제작하였습니다.
+                                JSX를 활용한 UI 컴포넌트 제작 및 redux를 활용한 상태관리 교육 수료 <br />
+                                ES6 기반의 프론트엔드 개발을 위한 기초 프로그래밍 능력 증진
                             </p>
                         </div>
                     </li>
