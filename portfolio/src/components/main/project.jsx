@@ -175,116 +175,52 @@ function Project({setScrollTarget}) {
                 </ul>
                 <b className="project__tit">퍼블리싱</b>
                 <ul className="projectList">
-                    <li>
-                        <strong className="projectList__tit">현대에버다임</strong>
-                        <div className="projectList__cnts">
-                            <div className="project__slideWrap">
-                                <Swiper
-                                    spaceBetween={20}
-                                    slidesPerView={1}
-                                    speed={1000}
-                                    loop={true}
-                                    pagination={{ clickable: true }}
-                                    autoplay={{delay: 3000}}
-                                >
-                                    <SwiperSlide><img src={hyeon1} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={hyeon2} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={hyeon3} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={hyeon4} alt="" /></SwiperSlide>
-                                </Swiper>
+                    <li className="half">
+                        <div>
+                            <strong className="projectList__tit">재현하늘창</strong>
+                            <div className="projectList__cnts">
+                                <div className="project__txtWrap">
+                                    <ul className="project__info">
+                                        <li>
+                                            <span>URL</span>
+                                            <a href="http://jhintex.co.kr/" target="_blank">http://jhintex.co.kr/</a>
+                                        </li>
+                                        <li>
+                                            <span>device</span>
+                                            <p>반응형 웹사이트</p>
+                                        </li>
+                                        <li>
+                                            <span>작업기간</span>
+                                            <p>7일</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div className="project__txtWrap">
-                                <ul className="project__info">
-                                    <li>
-                                        <span>URL</span>
-                                        <a href="https://www.hyundaieverdigm.com/main/" target="_blank">https://www.hyundaieverdigm.com/main/</a>
-                                    </li>
-                                    <li>
-                                        <span>device</span>
-                                        <p>반응형 웹사이트</p>
-                                    </li>
-                                    <li>
-                                        <span>작업기간</span>
-                                        <p>10일</p>
-                                    </li>
-                                </ul>
+                        </div>
+                        <div>
+                            <strong className="projectList__tit">승원건설그룹</strong>
+                            <div className="projectList__cnts">
+                                <div className="project__txtWrap">
+                                    <ul className="project__info">
+                                        <li>
+                                            <span>URL</span>
+                                            <a href="http://www.seungwongroup.com/" target="_blank">http://www.seungwongroup.com/</a>
+                                        </li>
+                                        <li>
+                                            <span>device</span>
+                                            <p>반응형 웹사이트</p>
+                                        </li>
+                                        <li>
+                                            <span>작업기간</span>
+                                            <p>5일</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <strong className="projectList__tit">승원건설그룹</strong>
-                        <div className="projectList__cnts">
-                            <div className="project__slideWrap">
-                                <Swiper
-                                    spaceBetween={20}
-                                    slidesPerView={1}
-                                    speed={1000}
-                                    loop={true}
-                                    pagination={{ clickable: true }}
-                                    autoplay={{delay: 3000}}
-                                >
-                                    <SwiperSlide><img src={seungwon1} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={seungwon2} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={seungwon3} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={seungwon4} alt="" /></SwiperSlide>
-                                    
-                                </Swiper>
-                            </div>
-                            <div className="project__txtWrap">
-                                <ul className="project__info">
-                                    <li>
-                                        <span>URL</span>
-                                        <a href="http://www.seungwongroup.com/" target="_blank">http://www.seungwongroup.com/</a>
-                                    </li>
-                                    <li>
-                                        <span>device</span>
-                                        <p>반응형 웹사이트</p>
-                                    </li>
-                                    <li>
-                                        <span>작업기간</span>
-                                        <p>5일</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <strong className="projectList__tit">재현하늘창</strong>
-                        <div className="projectList__cnts">
-                            <div className="project__slideWrap">
-                                <Swiper
-                                    spaceBetween={20}
-                                    slidesPerView={1}
-                                    speed={1000}
-                                    loop={true}
-                                    pagination={{ clickable: true }}
-                                    autoplay={{delay: 3000}}
-                                >
-                                    <SwiperSlide><img src={jaehyeon1} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={jaehyeon2} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={jaehyeon3} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={jaehyeon5} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={jaehyeon6} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={jaehyeon7} alt="" /></SwiperSlide>
-                                </Swiper>
-                            </div>
-                            <div className="project__txtWrap">
-                                <ul className="project__info">
-                                    <li>
-                                        <span>URL</span>
-                                        <a href="http://jhintex.co.kr/" target="_blank">http://jhintex.co.kr/</a>
-                                    </li>
-                                    <li>
-                                        <span>device</span>
-                                        <p>반응형 웹사이트</p>
-                                    </li>
-                                    <li>
-                                        <span>작업기간</span>
-                                        <p>7일</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </li>
                     {
                         viewAmt >= 1 && (
@@ -406,13 +342,13 @@ function Project({setScrollTarget}) {
                                         </div>
                                     </div>
                                     <div>
-                                        <strong className="projectList__tit">에코디파이</strong>
+                                        <strong className="projectList__tit">현대에버다임</strong>
                                         <div className="projectList__cnts">
                                             <div className="project__txtWrap">
                                                 <ul className="project__info">
                                                     <li>
                                                         <span>URL</span>
-                                                        <a href="https://www.ecodefi.net/#/main" target="_blank">https://www.ecodefi.net/#/main</a>
+                                                        <a href="https://www.hyundaieverdigm.com/main/" target="_blank">https://www.hyundaieverdigm.com/main/</a>
                                                     </li>
                                                     <li>
                                                         <span>device</span>
@@ -420,7 +356,7 @@ function Project({setScrollTarget}) {
                                                     </li>
                                                     <li>
                                                         <span>작업기간</span>
-                                                        <p>2일</p>
+                                                        <p>10일</p>
                                                     </li>
                                                 </ul>
                                             </div>
