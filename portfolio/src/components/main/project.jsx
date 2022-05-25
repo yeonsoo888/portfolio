@@ -219,13 +219,7 @@ function Project({setScrollTarget}) {
                             </div>
                         </div>
                     </li>
-                    <li>
-                        
-                    </li>
-                    {
-                        viewAmt >= 1 && (
-                            <>
-                            <li className="half">
+                    <li className="half">
                                 <div>
                                     <strong className="projectList__tit">대한병원코디네이터협회</strong>
                                     <div className="projectList__cnts">
@@ -269,6 +263,9 @@ function Project({setScrollTarget}) {
                                     </div>
                                 </div>
                             </li>
+                    {
+                        viewAmt >= 1 && (
+                            <>
                             <li className="half">
                                 <div>
                                     <strong className="projectList__tit">삼우에레코</strong>
@@ -313,13 +310,7 @@ function Project({setScrollTarget}) {
                                     </div>
                                 </div>
                             </li>
-                        </>
-                        )
-                    }
-                    {
-                        viewAmt >= 2 && (
-                            <>
-                                <li className="half">
+                            <li className="half">
                                     <div>
                                         <strong className="projectList__tit">유원디스플레이</strong>
                                         <div className="projectList__cnts">
@@ -363,6 +354,12 @@ function Project({setScrollTarget}) {
                                         </div>
                                     </div>
                                 </li>
+                        </>
+                        )
+                    }
+                    {
+                        viewAmt >= 2 && (
+                            <>
                                 <li className="half">
                                     <div>
                                         <strong className="projectList__tit">SWM</strong>
@@ -407,12 +404,6 @@ function Project({setScrollTarget}) {
                                         </div>
                                     </div>
                                 </li>
-                            </>
-                        )
-                    }
-                    {
-                        viewAmt >= 3 && (
-                            <>
                                 <li className="half">
                                     <div>
                                         <strong className="projectList__tit">미카도스시</strong>
@@ -463,7 +454,7 @@ function Project({setScrollTarget}) {
                 </ul>
                 <div className="btnMore__wrap">
                     {
-                        viewAmt == 3
+                        viewAmt == 2
                         ? <button type="button" onClick={handleFlod}>접기</button>
                         : <button type="button" onClick={handleViewMore}>더보기</button>
                     }
