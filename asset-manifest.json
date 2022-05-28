@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.210edf2b.css",
-    "main.js": "/portfolio/static/js/main.b6c2c980.js",
+    "main.js": "/portfolio/static/js/main.fcd96189.js",
     "static/media/youtube1.JPG": "/portfolio/static/media/youtube1.4e01fd3d53c631cabf55.JPG",
     "static/media/youtube2.JPG": "/portfolio/static/media/youtube2.25e8bbdb6d8e2af47c65.JPG",
     "static/media/hyeon1.JPG": "/portfolio/static/media/hyeon1.cdb1426eb83658437300.JPG",
@@ -20,16 +20,19 @@
     "static/media/todo2.JPG": "/portfolio/static/media/todo2.9573c18c6aefe2b85a19.JPG",
     "static/media/seungwon4.JPG": "/portfolio/static/media/seungwon4.098e97296bf667cb75ef.JPG",
     "static/media/todo3.JPG": "/portfolio/static/media/todo3.6e27cd5452b8e1a9954a.JPG",
+    "static/media/budy1.JPG": "/portfolio/static/media/budy1.b22595c78d1daa872619.JPG",
     "static/media/todo1.JPG": "/portfolio/static/media/todo1.4230d543b9da8014ebec.JPG",
+    "static/media/budy3.JPG": "/portfolio/static/media/budy3.9e0ddda732974c99dadd.JPG",
     "static/media/jaehyeon7.JPG": "/portfolio/static/media/jaehyeon7.743f26fae7a6f472bd85.JPG",
     "static/media/skill1.jpg": "/portfolio/static/media/skill1.82cea3869426291f52f5.jpg",
+    "static/media/budy2.JPG": "/portfolio/static/media/budy2.a90bc83afb08f8173935.JPG",
     "static/media/skill4.jpg": "/portfolio/static/media/skill4.74580e3baa1a06d8fd44.jpg",
     "index.html": "/portfolio/index.html",
     "main.210edf2b.css.map": "/portfolio/static/css/main.210edf2b.css.map",
-    "main.b6c2c980.js.map": "/portfolio/static/js/main.b6c2c980.js.map"
+    "main.fcd96189.js.map": "/portfolio/static/js/main.fcd96189.js.map"
   },
   "entrypoints": [
     "static/css/main.210edf2b.css",
-    "static/js/main.b6c2c980.js"
+    "static/js/main.fcd96189.js"
   ]
 }
