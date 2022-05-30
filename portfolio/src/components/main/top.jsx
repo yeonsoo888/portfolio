@@ -5,7 +5,7 @@ export default function Top() {
 
     return (
         <>
-            <div className="mainVis">
+            <div className="mainVis" style={{backgroundImage: `url(${path}/images/mainTop.jpg)`}}>
                 <div className="mainVis__inner">
                     <b className="mainVis__tit">프론트엔드 개발자 포트폴리오</b>
                     <strong className="mainVis__name">김 연 수</strong>

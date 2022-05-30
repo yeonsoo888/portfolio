@@ -5,26 +5,6 @@ import SwiperCore ,{Autoplay , Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import hyeon1 from '../../images/project/hyeon1.JPG';
-import hyeon2 from '../../images/project/hyeon2.JPG';
-import hyeon3 from '../../images/project/hyeon3.JPG';
-import hyeon4 from '../../images/project/hyeon4.JPG';
-import seungwon1 from '../../images/project/seungwon1.JPG';
-import seungwon2 from '../../images/project/seungwon2.JPG';
-import seungwon3 from '../../images/project/seungwon3.JPG';
-import seungwon4 from '../../images/project/seungwon4.JPG';
-import jaehyeon1 from '../../images/project/jaehyeon1.JPG';
-import jaehyeon2 from '../../images/project/jaehyeon2.JPG';
-import jaehyeon3 from '../../images/project/jaehyeon3.JPG';
-import jaehyeon5 from '../../images/project/jaehyeon5.JPG';
-import jaehyeon6 from '../../images/project/jaehyeon6.JPG';
-import jaehyeon7 from '../../images/project/jaehyeon7.JPG';
-import todo1 from '../../images/project/todo1.JPG';
-import todo2 from '../../images/project/todo2.JPG';
-import todo3 from '../../images/project/todo3.JPG';
-import youtube1 from '../../images/project/youtube1.JPG';
-import youtube2 from '../../images/project/youtube2.JPG';
-
 SwiperCore.use([Autoplay,Pagination ])
 
 function Project({setScrollTarget}) {
@@ -72,9 +52,9 @@ function Project({setScrollTarget}) {
                                     pagination={{ clickable: true }}
                                     autoplay={{delay: 3000}}
                                 >
-                                    <SwiperSlide><img src={todo1} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={todo2} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={todo3} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${path}/images/project/todo1.JPG`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${path}/images/project/todo2.JPG`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${path}/images/project/todo3.JPG`} alt="" /></SwiperSlide>
                                 </Swiper>
                             </div>
                             <div className="project__txtWrap">
@@ -91,13 +71,11 @@ function Project({setScrollTarget}) {
                                         <span>기능</span>
                                         <p>
                                             1. JWT를 이용한 로그인 구현 (cookie) <br/>
-                                            2. mongoDB atlas 호스팅 <br/>
-                                            3. node.js + express 서버 구현 <br/>
-                                            4. typescript 적용 <br/>
-                                            5. CRUD 구현
+                                            2. node.js + express 서버 구현 <br/>
+                                            3. typescript 적용 <br/>
+                                            4. CRUD 구현
                                         </p>
                                     </li>
-                                    
                                 </ul>
                             </div>
                         </div>
@@ -105,7 +83,7 @@ function Project({setScrollTarget}) {
                     <li>
                         <strong className="projectList__tit">yeontube</strong>
                         <div className="projectList__cnts">
-                        <div className="project__slideWrap">
+                            <div className="project__slideWrap">
                                 <Swiper
                                     spaceBetween={20}
                                     slidesPerView={1}
@@ -114,8 +92,8 @@ function Project({setScrollTarget}) {
                                     pagination={{ clickable: true }}
                                     autoplay={{delay: 3000}}
                                 >
-                                    <SwiperSlide><img src={youtube1} alt="" /></SwiperSlide>
-                                    <SwiperSlide><img src={youtube2} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${path}/images/project/youtube1.JPG`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${path}/images/project/youtube2.JPG`} alt="" /></SwiperSlide>
                                 </Swiper>
                             </div>
                             <div className="project__txtWrap">
@@ -132,9 +110,9 @@ function Project({setScrollTarget}) {
                                         <span>기능</span>
                                         <p>
                                             youtube API를 이용한 youtube clone coding <br />
-                                            1. 인기동영상 <br />
-                                            2. 검색기능 <br />
-                                            3. 동영상 View
+                                            1. 최초 로그인시 인기동영상 노출 <br />
+                                            2. 검색시 키워드를 통한 관련영상 노출 <br />
+                                            3. 동영상 리스트 클릭시 iframe을 이용한 영상 송출
                                         </p>
                                     </li>
                                     
@@ -146,12 +124,24 @@ function Project({setScrollTarget}) {
                         <strong className="projectList__tit">BuddyBuddy_v2</strong>
                         <div className="projectList__cnts">
                             <div className="project__slideWrap">
+                                <Swiper
+                                    spaceBetween={20}
+                                    slidesPerView={1}
+                                    speed={1000}
+                                    loop={true}
+                                    pagination={{ clickable: true }}
+                                    autoplay={{delay: 3000}}
+                                >
+                                    <SwiperSlide><img src={`${path}/images/project/budy1.JPG`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${path}/images/project/budy2.JPG`} alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${path}/images/project/budy3.JPG`} alt="" /></SwiperSlide>
+                                </Swiper>
                             </div>
                             <div className="project__txtWrap">
                                 <ul className="project__info">
                                     <li>
                                         <span>URL</span>
-                                        <a href="https://github.com/yeonsoo888/buddybuddy_v2" target="_blank">https://github.com/yeonsoo888/buddybuddy_v2</a>
+                                        <a href="https://buddybuddy-351707.du.r.appspot.com/" target="_blank">https://buddybuddy-351707.du.r.appspot.com/</a>
                                     </li>
                                     <li>
                                         <span>GitHub</span>
@@ -160,11 +150,8 @@ function Project({setScrollTarget}) {
                                     <li>
                                         <span>기능</span>
                                         <p>
-                                            -제작중-
-                                            <br />
-                                            1. socket.io를 이용한 실시간 채팅
-                                            2. 채팅 방 생성
-                                            3. 로그인
+                                            1. Node.js, express를 이용한 로그인 구현 <br />
+                                            2. socket.io를 이용한 실시간 채팅 
                                         </p>
                                     </li>
                                     
