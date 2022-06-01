@@ -6,8 +6,8 @@ import About from './components/main/about';
 import Skills from './components/main/skills';
 import Project from './components/main/project';
 import Carrer from './components/main/carrer';
+
 export default function App() {
-    const path = process.env.PUBLIC_URL;
     const [scroll, setScroll] = useState("");
     const [scrollTarget, setScrollTarget] = useState([]);
 

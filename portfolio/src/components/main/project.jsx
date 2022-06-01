@@ -4,12 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore ,{Autoplay , Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Todo from "../pop/todo";
 
 SwiperCore.use([Autoplay,Pagination ])
 
 function Project({setScrollTarget}) {
     const path = process.env.PUBLIC_URL;
     const [viewAmt,setViewAmt] = useState(0);
+    const [isPop,setIsPop] = useState("");
 
     let newNum;
     const handleViewMore = () => {
@@ -77,6 +79,7 @@ function Project({setScrollTarget}) {
                                         </p>
                                     </li>
                                 </ul>
+                                <button onClick={() => {setIsPop("sec1")}}>More</button>
                             </div>
                         </div>
                     </li>
@@ -115,7 +118,6 @@ function Project({setScrollTarget}) {
                                             3. 동영상 리스트 클릭시 iframe을 이용한 영상 송출
                                         </p>
                                     </li>
-                                    
                                 </ul>
                             </div>
                         </div>
@@ -447,6 +449,9 @@ function Project({setScrollTarget}) {
                     }
                 </div>
             </Layout>
+            {
+                isPop == "sec1" && <Todo />
+            }
         </>
     )
 }
