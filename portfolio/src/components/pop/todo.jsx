@@ -1,14 +1,14 @@
 import React from "react";
 import PopLayout from "./popLayout";
 
-function Todo():JSX.Element {
+function Todo({setIsPop}):JSX.Element {
     return (
-        <PopLayout>
+        <PopLayout setIsPop={setIsPop}>
             <h4>To Do App</h4>
-            <p>사이트 링크 : <a rel="noreferrer" href="https://todoapp-351107.du.r.appspot.com/" target="_blank">https://todoapp-351107.du.r.appspot.com/</a></p>
-            <p>github 링크 : <a rel="noreferrer" href="https://github.com/yeonsoo888/to-do-app" target="_blank">https://github.com/yeonsoo888/to-do-app</a></p>
+            <p className="linkTxt">사이트 링크 : <a rel="noreferrer" href="https://todoapp-351107.du.r.appspot.com/" target="_blank">https://todoapp-351107.du.r.appspot.com/</a></p>
+            <p className="linkTxt">github 링크 : <a rel="noreferrer" href="https://github.com/yeonsoo888/to-do-app" target="_blank">https://github.com/yeonsoo888/to-do-app</a></p>
             <hr />
-            <div>
+            <div className="txtWrap">
                 <strong>Summary</strong>
                 <p>
                     할일을 메모하고 체크할 수 있는 웹 앱 입니다. 어플리케이션의 기본기능인
@@ -24,6 +24,9 @@ function Todo():JSX.Element {
                     그리고 회원 로그인 기능을 개발하는 중 jwt방식과 session방식이 있다는 것을 배웠으며, <br />
                     xss공격에 취약하고 장기간 방치시 해킹의 위험이 커진다는 단점이 있지만, 모바일 앱으로 까지의 확장성을 고려할 여지가 있다고 판단하여
                     쿠키를 사용할 수 없는 모바일 앱에서는 jwt방식이 최적이라고 판단하였기에 jwt방식으로 로그인 기능을 개발하였습니다. <br />
+                    <br />
+                    처음으로 Typescript를 적용하기도 했습니다. 처음 사용하다보니 여러가지 어려움이 있었고 js로 개발하는 것보다 시간이 훨씬 더 소모되었지만<br />
+                    오류발생시 즉각적인 피드백이 생기고 좀더 안정적인 개발이 가능할 것이라고 생각하였습니다.
                 </p>
             </div>
                 
