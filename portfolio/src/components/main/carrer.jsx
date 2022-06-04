@@ -29,7 +29,7 @@ export default function Carrer() {
                             </p>
                         </div>
                     </li>
-                    <li>
+                    {/* <li>
                         <strong>
                             2022.03 ~ <br />
                             2022.06
@@ -48,7 +48,7 @@ export default function Carrer() {
                                 ES6 기반의 프론트엔드 개발을 위한 기초 프로그래밍 능력 증진
                             </p>
                         </div>
-                    </li>
+                    </li> */}
                     <li>
                         <strong>
                             2020-12 ~ <br />
@@ -90,7 +90,7 @@ export default function Carrer() {
                             </p>
                         </div>
                     </li>
-                    <li>
+                    {/* <li>
                         <strong>
                             2020-01 ~ <br />
                             2020-06
@@ -110,7 +110,7 @@ export default function Carrer() {
                                 흥미를 가질수 있었습니다.
                             </p>
                         </div>
-                    </li>
+                    </li> */}
                 </ul>
             </Layout>
         </>

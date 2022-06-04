@@ -1,11 +1,11 @@
 .mainVis {
-    position: relative; display: flex; align-items: center; justify-content: center; background-position: center !important; background-size: cover !important; height: 60rem; text-align: center;
+    position: relative; display: flex; align-items: center; justify-content: center; background-position: center !important; background-size: cover !important; height: 100vh; min-height: 60rem; text-align: center;
     &::after {
         content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(116,55,15,0.5);
     }
 
     &__inner {
-        position: relative; z-index: 2; background: rgba(0,0,0,0.5); width: 100%; padding: 2rem;
+        position: relative; display: flex; align-items: center; justify-content: center; z-index: 2; background: rgba(0,0,0,0.5); width: 100%; height: 100%;
     }
     &__name {
         display: block; font-size: 3.5rem; color: #fff; font-weight: 800; 
@@ -18,7 +18,7 @@
     }
     &__txt {
         display: block; font-size: 2rem; color: rgba(255,255,255,0.7); font-weight: 400; 
-        margin: 2rem 0 0; line-height: 1.8;
+        margin: 2rem 0 0; line-height: 1.8; letter-spacing: 2px;
     }
     
     button {
@@ -124,6 +124,26 @@
         }
     }
 }
+
+.project1__list {
+    display: flex; flex-wrap: wrap; gap: 2rem;
+    li {
+        position: relative; width: calc((100% - 6rem) / 4);
+        .project1__img {padding-bottom: 100%; background-position: center !important; background-size: cover !important;}
+        .project1__txtWrap {
+            transition: .3s ease; opacity: 0;
+            position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 2; background: rgba(0,0,0,0.5);
+            &:hover {
+                opacity: 1;
+            }
+            .project1__tit {display: block; font-size: 1.6rem; color: #fff; font-weight: 500; text-align: center; margin: 0 0 1rem;}
+            a {
+                display: flex; align-items: center; justify-content: center; color: #fff; border: 1px solid #fff; padding: 0.5rem 1rem; margin: 0 auto; font-size: 1.4rem; transition: .3s ease;
+                &:hover {background: #fff; color: #222;}
+            }
+        }
+    }
+} 
 
 .carrer {
     background: #D9D5A3;

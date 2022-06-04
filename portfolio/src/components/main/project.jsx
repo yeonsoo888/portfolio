@@ -4,26 +4,23 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore ,{Autoplay , Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import {data} from '../../data/project'
 
 SwiperCore.use([Autoplay,Pagination ])
 
 function Project({setScrollTarget}) {
     const path = process.env.PUBLIC_URL;
     const [viewAmt,setViewAmt] = useState(0);
-
-    let newNum;
-    const handleViewMore = () => {
-        newNum = viewAmt + 1;
-        setViewAmt(newNum);
-    }
-    const handleFlod = () => {
-        setViewAmt(0);
-    }
+    const [projectList,setProjectList] = useState([]);
 
     useEffect(() => {
         targetPush();
     },[viewAmt])
+    useEffect(() => {
+        setProjectList(data); 
+    },[])
 
+    
     const mainSec = document.querySelectorAll(".mainSec");
     function targetPush() {
         const arrTarget = [];
@@ -39,7 +36,7 @@ function Project({setScrollTarget}) {
         <>
             <Layout title="projects">
                 <h4 className="mainTit">Projects</h4>
-                <ul className="projectList">
+                {/* <ul className="projectList">
                     <li>
                         <strong className="projectList__tit">To do App</strong>
                         <div className="projectList__cnts">
@@ -159,293 +156,25 @@ function Project({setScrollTarget}) {
                             </div>
                         </div>
                     </li>
+                </ul> */}
+                <ul className="project1__list">
+                    {
+                        projectList.map( (item,i) => {
+                            return(
+                                <li className="project1__item" key={i}>
+                                    <div className="project1__img" style={{background: `url(${path}/images/project/p${item.imgNum}.jpg)no-repeat`}}></div>
+                                    <div className="project1__txtWrap">
+                                        <div>
+                                            <strong className="project1__tit">{item.title}</strong>
+                                            <a href={item.link} target="_blank" rel="noreferrer" className="project1__link">View</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            )
+                        })
+                    }
+                    
                 </ul>
-                <b className="project__tit">퍼블리싱</b>
-                <ul className="projectList">
-                    <li className="half">
-                        <div>
-                            <strong className="projectList__tit">재현하늘창</strong>
-                            <div className="projectList__cnts">
-                                <div className="project__txtWrap">
-                                    <ul className="project__info">
-                                        <li>
-                                            <span>URL</span>
-                                            <a href="http://jhintex.co.kr/" target="_blank">http://jhintex.co.kr/</a>
-                                        </li>
-                                        <li>
-                                            <span>device</span>
-                                            <p>반응형 웹사이트</p>
-                                        </li>
-                                        <li>
-                                            <span>작업기간</span>
-                                            <p>7일</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <strong className="projectList__tit">승원건설그룹</strong>
-                            <div className="projectList__cnts">
-                                <div className="project__txtWrap">
-                                    <ul className="project__info">
-                                        <li>
-                                            <span>URL</span>
-                                            <a href="http://www.seungwongroup.com/" target="_blank">http://www.seungwongroup.com/</a>
-                                        </li>
-                                        <li>
-                                            <span>device</span>
-                                            <p>반응형 웹사이트</p>
-                                        </li>
-                                        <li>
-                                            <span>작업기간</span>
-                                            <p>5일</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="half">
-                                <div>
-                                    <strong className="projectList__tit">대한병원코디네이터협회</strong>
-                                    <div className="projectList__cnts">
-                                        <div className="project__txtWrap">
-                                            <ul className="project__info">
-                                                <li>
-                                                    <span>URL</span>
-                                                    <a href="http://khca.iceserver.co.kr/main/" target="_blank">http://khca.iceserver.co.kr/main/</a>
-                                                </li>
-                                                <li>
-                                                    <span>device</span>
-                                                    <p>반응형 웹사이트</p>
-                                                </li>
-                                                <li>
-                                                    <span>작업기간</span>
-                                                    <p>7일</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <strong className="projectList__tit">유니센터</strong>
-                                    <div className="projectList__cnts">
-                                        <div className="project__txtWrap">
-                                            <ul className="project__info">
-                                                <li>
-                                                    <span>URL</span>
-                                                    <a href="https://uniedu.com.au/" target="_blank">https://uniedu.com.au/</a>
-                                                </li>
-                                                <li>
-                                                    <span>device</span>
-                                                    <p>반응형 웹사이트</p>
-                                                </li>
-                                                <li>
-                                                    <span>작업기간</span>
-                                                    <p>6일</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                    {
-                        viewAmt >= 1 && (
-                            <>
-                            <li className="half">
-                                <div>
-                                    <strong className="projectList__tit">삼우에레코</strong>
-                                    <div className="projectList__cnts">
-                                        <div className="project__txtWrap">
-                                            <ul className="project__info">
-                                                <li>
-                                                    <span>URL</span>
-                                                    <a href="http://www.samwooeleco.com/" target="_blank">http://www.samwooeleco.com/</a>
-                                                </li>
-                                                <li>
-                                                    <span>device</span>
-                                                    <p>반응형 웹사이트</p>
-                                                </li>
-                                                <li>
-                                                    <span>작업기간</span>
-                                                    <p>5일</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <strong className="projectList__tit">티제이씨라이프</strong>
-                                    <div className="projectList__cnts">
-                                        <div className="project__txtWrap">
-                                            <ul className="project__info">
-                                                <li>
-                                                    <span>URL</span>
-                                                    <a href="http://rxtem.inpiad.co.kr/" target="_blank">http://rxtem.inpiad.co.kr/</a>
-                                                </li>
-                                                <li>
-                                                    <span>device</span>
-                                                    <p>반응형 웹사이트</p>
-                                                </li>
-                                                <li>
-                                                    <span>작업기간</span>
-                                                    <p>2일</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="half">
-                                    <div>
-                                        <strong className="projectList__tit">유원디스플레이</strong>
-                                        <div className="projectList__cnts">
-                                            <div className="project__txtWrap">
-                                                <ul className="project__info">
-                                                    <li>
-                                                        <span>URL</span>
-                                                        <a href="http://uonedp.com/" target="_blank">http://uonedp.com/</a>
-                                                    </li>
-                                                    <li>
-                                                        <span>device</span>
-                                                        <p>반응형 웹사이트</p>
-                                                    </li>
-                                                    <li>
-                                                        <span>작업기간</span>
-                                                        <p>3.5일</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <strong className="projectList__tit">현대에버다임</strong>
-                                        <div className="projectList__cnts">
-                                            <div className="project__txtWrap">
-                                                <ul className="project__info">
-                                                    <li>
-                                                        <span>URL</span>
-                                                        <a href="https://www.hyundaieverdigm.com/main/" target="_blank">https://www.hyundaieverdigm.com/main/</a>
-                                                    </li>
-                                                    <li>
-                                                        <span>device</span>
-                                                        <p>반응형 웹사이트</p>
-                                                    </li>
-                                                    <li>
-                                                        <span>작업기간</span>
-                                                        <p>10일</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                        </>
-                        )
-                    }
-                    {
-                        viewAmt >= 2 && (
-                            <>
-                                <li className="half">
-                                    <div>
-                                        <strong className="projectList__tit">SWM</strong>
-                                        <div className="projectList__cnts">
-                                            <div className="project__txtWrap">
-                                                <ul className="project__info">
-                                                    <li>
-                                                        <span>URL</span>
-                                                        <a href="https://www.swm.ai/" target="_blank">https://www.swm.ai/</a>
-                                                    </li>
-                                                    <li>
-                                                        <span>device</span>
-                                                        <p>반응형 웹사이트</p>
-                                                    </li>
-                                                    <li>
-                                                        <span>작업기간</span>
-                                                        <p>3일</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <strong className="projectList__tit">유학앤교육</strong>
-                                        <div className="projectList__cnts">
-                                            <div className="project__txtWrap">
-                                                <ul className="project__info">
-                                                    <li>
-                                                        <span>URL</span>
-                                                        <a href="http://uhak.iceserver.co.kr/" target="_blank">http://uhak.iceserver.co.kr/</a>
-                                                    </li>
-                                                    <li>
-                                                        <span>device</span>
-                                                        <p>반응형 웹사이트</p>
-                                                    </li>
-                                                    <li>
-                                                        <span>작업기간</span>
-                                                        <p>5일</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li className="half">
-                                    <div>
-                                        <strong className="projectList__tit">미카도스시</strong>
-                                        <div className="projectList__cnts">
-                                            <div className="project__txtWrap">
-                                                <ul className="project__info">
-                                                    <li>
-                                                        <span>URL</span>
-                                                        <a href="http://mikadosushi.co.kr/" target="_blank">http://mikadosushi.co.kr/</a>
-                                                    </li>
-                                                    <li>
-                                                        <span>device</span>
-                                                        <p>반응형 웹사이트</p>
-                                                    </li>
-                                                    <li>
-                                                        <span>작업기간</span>
-                                                        <p>3일</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <strong className="projectList__tit">TNS</strong>
-                                        <div className="projectList__cnts">
-                                            <div className="project__txtWrap">
-                                                <ul className="project__info">
-                                                    <li>
-                                                        <span>URL</span>
-                                                        <a href="https://tbjeong.cafe24.com/" target="_blank">https://tbjeong.cafe24.com/</a>
-                                                    </li>
-                                                    <li>
-                                                        <span>device</span>
-                                                        <p>반응형 웹사이트</p>
-                                                    </li>
-                                                    <li>
-                                                        <span>작업기간</span>
-                                                        <p>4일</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </>
-                        )
-                    }
-                </ul>
-                <div className="btnMore__wrap">
-                    {
-                        viewAmt == 2
-                        ? <button type="button" onClick={handleFlod}>접기</button>
-                        : <button type="button" onClick={handleViewMore}>더보기</button>
-                    }
-                </div>
             </Layout>
         </>
     )
