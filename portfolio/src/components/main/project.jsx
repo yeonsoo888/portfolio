@@ -6,16 +6,17 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import {data} from '../../data/project'
 
+
 SwiperCore.use([Autoplay,Pagination ])
 
 function Project({setScrollTarget}) {
     const path = process.env.PUBLIC_URL;
-    const [viewAmt,setViewAmt] = useState(0);
+
     const [projectList,setProjectList] = useState([]);
 
     useEffect(() => {
         targetPush();
-    },[viewAmt])
+    },[])
     useEffect(() => {
         setProjectList(data); 
     },[])
@@ -74,6 +75,7 @@ function Project({setScrollTarget}) {
                                         </p>
                                     </li>
                                 </ul>
+                                <button className="btn__readeMe" onClick={() => {setIsPop("sec1")}}>READE ME</button>
                             </div>
                         </div>
                     </li>
@@ -107,13 +109,13 @@ function Project({setScrollTarget}) {
                                         <span>기능</span>
                                         <p>
                                             youtube API를 이용한 youtube clone coding <br />
-                                            1. 최초 로그인시 인기동영상 노출 <br />
+                                            1. 최초 로드시 인기동영상 노출 <br />
                                             2. 검색시 키워드를 통한 관련영상 노출 <br />
                                             3. 동영상 리스트 클릭시 iframe을 이용한 영상 송출
                                         </p>
                                     </li>
-                                    
                                 </ul>
+                                <button className="btn__readeMe" onClick={() => {setIsPop("sec2")}}>READE ME</button>
                             </div>
                         </div>
                     </li>
@@ -151,8 +153,8 @@ function Project({setScrollTarget}) {
                                             2. socket.io를 이용한 실시간 채팅 
                                         </p>
                                     </li>
-                                    
                                 </ul>
+                                <button className="btn__readeMe" onClick={() => {setIsPop("sec3")}}>READE ME</button>
                             </div>
                         </div>
                     </li>
@@ -176,6 +178,7 @@ function Project({setScrollTarget}) {
                     
                 </ul>
             </Layout>
+
         </>
     )
 }
