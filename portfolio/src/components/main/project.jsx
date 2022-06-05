@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useRef } from "react";
 import Layout from "../common/layout";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore ,{Autoplay , Pagination } from "swiper";

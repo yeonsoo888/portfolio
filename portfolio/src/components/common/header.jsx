@@ -23,7 +23,13 @@ export default function Header({scrollTarget,scroll}) {
             `${scroll} header ${isMenuOpen ? "menuOpen" : ""}` 
         }>
             <div className="header__inner inner">
-                <h1 className="logo">
+                <h1 className="logo" onClick={() => {
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: "smooth"
+                    })
+                }}>
                     <Link to="/">YS Portfolio</Link>
                 </h1>
                 <nav className="header__nav">
