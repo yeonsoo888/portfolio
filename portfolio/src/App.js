@@ -29,7 +29,7 @@ export default function App() {
             }
         })
 
-        window.dispatchEvent(new Event('resize'));
+        
         window.dispatchEvent(new Event('scroll'));
     }, [])
 

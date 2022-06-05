@@ -30,7 +30,7 @@ export default function Header({scrollTarget,scroll}) {
                         behavior: "smooth"
                     })
                 }}>
-                    <Link to="/">YS Portfolio</Link>
+                    <a>YS Portfolio</a>
                 </h1>
                 <nav className="header__nav">
                     <ul>
