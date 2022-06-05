@@ -1,6 +1,6 @@
 /* common */
 html, body { margin: 0; width: 100%; height: 100%; position:relative; padding: 0; font-size: 0.625em;}
-* {margin:0; padding:0; list-style:none; text-decoration:none; font-family: 'Noto Sans KR', sans-serif; -webkit-text-size-adjust: none; box-sizing: border-box; word-break: keep-all;}
+* {margin:0; padding:0; list-style:none; text-decoration:none; font-family: 'Noto Sans KR', sans-serif; -webkit-text-size-adjust: none; box-sizing: border-box; word-break: break-all;}
 
 ul>li>a { text-decoration:none; }
 a {color: #333; text-decoration: none;}
@@ -80,3 +80,40 @@ button {cursor: pointer; border: none;}
 }
 .pop__inner {position: relative; padding: 3rem; background: #fff; width: calc(100% - 4rem); max-width: 80rem; margin: 4rem auto; cursor: auto;}
 .pop__btn {position: absolute; right: 1rem; top: 1rem; padding: 0.5rem 1rem; background: #eaeaea;}
+
+.mouseCircle {position: fixed; width: 5rem; height: 5rem; border: 1px solid #fff; border-radius: 50%; z-index: 10; transform: translate(-50%,-50%); pointer-events: none; mix-blend-mode: difference; background: #fff}
+
+
+.hamburger_wrap {   position: absolute;  cursor: pointer; display: none; transition: .15s ease; height: 100%; align-items: center; top: 0; right: 1rem; z-index: 14;}
+.hamburger__inner {width: 38px; height: 22px; position: relative; transition: .3s ease;}
+#nav-icon3 {position: absolute; width: 100%;height: 100%; -webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer; transform: translate(-50%,-50%); left: 50%; top: 50%;}
+#nav-icon3 span {display: block;position: absolute; height: 4px;width: 100%;background: #fff; border-radius: 9px;opacity: 1;left: 0;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-o-transition: .25s ease-in-out;transition: .25s ease-in-out;}
+#nav-icon3 span:nth-child(1) {top: 0px;}
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {top: 11px;}
+#nav-icon3 span:nth-child(4) {top: 22px; width: calc(100% - 20px); left: 20px;}
+#nav-icon3.open span:nth-child(1) {top: 12.5px;width: 0%;left: 50%;}
+#nav-icon3.open span:nth-child(2) {-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}
+#nav-icon3.open span:nth-child(3) {-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
+#nav-icon3.open span:nth-child(4) {top: 12.5px;width: 0%;left: 50%;}
+
+.header.scrolled #nav-icon3 span {background: #333;}
+
+@media screen and (max-width: 1024px) {
+    
+    
+    .header__nav {position: absolute; opacity: 0; visibility: hidden; left: 0; top: 100%; height: calc(100vh - 100%); background: rgba(0,0,0,0.8); width: 100%; transition: .3s ease;}
+    .header__nav ul {display: block; height: auto;}
+    
+    .hamburger_wrap {display: flex;}
+    .header__nav ul li {text-align: center; }
+    .header__nav ul li + li {margin: 0; }
+    .header__nav ul li button {position: relative; width: 100%; padding: 1.5rem 0;}
+    .header__nav ul li button::after {content: ""; width: 3rem; height: 1px ; background: #fff; position: absolute; left: 50%; transform: translate(-50%,0); bottom: 0;}
+    .header__nav ul li:last-child button::after {display: none;}
+    .header.scrolled .header__nav ul li button {color: #fff;}
+    
+    .menuOpen .header__nav {opacity: 1; visibility: visible;}
+}
+@media screen and (max-width: 768px) {
+    html, body {font-size: 0.5em;}
+}
