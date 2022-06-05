@@ -12,6 +12,8 @@ export default function App() {
     const [scrollTarget, setScrollTarget] = useState([]);
     const mouseCircle = useRef(null);
 
+    const [load,setLoad] = useState(false);
+
     useEffect(() => {
         window.addEventListener('mousemove', (e) => {
             mouseCircle.current.style.left = e.clientX + "px";
@@ -27,16 +29,6 @@ export default function App() {
             }
         })
 
-        const mainSec = document.querySelectorAll(".mainSec");
-        window.addEventListener("resize", () => {
-            const arrTarget = [];
-            let headerheight = document.querySelector(".header").offsetHeight;
-
-            for (let item of mainSec) {
-                arrTarget.push(item.offsetTop - headerheight);
-            }
-            setScrollTarget(arrTarget);
-        })
         window.dispatchEvent(new Event('resize'));
         window.dispatchEvent(new Event('scroll'));
     }, [])
@@ -50,7 +42,7 @@ export default function App() {
             <Top />
             <About />
             <Skills />
-            <Project setScrollTarget={setScrollTarget}/>
+            <Project setScrollTarget={setScrollTarget} setLoad={setLoad}/>
             <Carrer />
         </>
     );

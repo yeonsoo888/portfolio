@@ -6,7 +6,7 @@ import {
     Link
 } from "react-router-dom";
 
-export default function Header({setScrollTarget,scrollTarget,scroll}) {
+export default function Header({scrollTarget,scroll}) {
     const [isMenuOpen,setIsMenuOpen] = useState(false);
 
     const moveTo = (idx) => {

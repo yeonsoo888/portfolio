@@ -14,20 +14,18 @@ function Project({setScrollTarget}) {
 
     const [projectList,setProjectList] = useState([]);
 
-    useEffect(() => {
-        targetPush();
-    },[])
+    const mainSec = document.querySelectorAll(".mainSec");
     useEffect(() => {
         setProjectList(data); 
-    },[])
+        setTarget();
+        window.addEventListener("resize", setTarget);
+    },[projectList])
 
-    
-    const mainSec = document.querySelectorAll(".mainSec");
-    function targetPush() {
+    const setTarget = () => {
         const arrTarget = [];
         let headerheight = document.querySelector(".header").offsetHeight;
-        
-        for( let item of mainSec) {
+
+        for (let item of mainSec) {
             arrTarget.push(item.offsetTop - headerheight);
         }
         setScrollTarget(arrTarget);
