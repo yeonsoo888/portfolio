@@ -5,7 +5,7 @@ export const data = [
     {"imgNum": "4", "title": "유니센터","link": "http://unicentre.com.au/"},
     {"imgNum": "5", "title": "엘오티베큠","link": "https://www.lotvacuum.com/"},
     {"imgNum": "6", "title": "에코디파이","link": "http://ecodefi.net/#/main"},
-    {"imgNum": "7", "title": "클럽 ES리조트","link": "http://www.nugavillage.co.kr"},
+    {"imgNum": "7", "title": "클럽 ES리조트","link": "https://www.clubes.co.kr/"},
     {"imgNum": "8", "title": "대한병원코디네이터협회","link": "http://www.khca.or.kr/main/"},
     {"imgNum": "9", "title": "미카도스시","link": "http://www.mikadosushi.co.kr/"},
     {"imgNum": "33", "title": "삼우에레코","link": "http://www.samwooeleco.com/#section1"},
